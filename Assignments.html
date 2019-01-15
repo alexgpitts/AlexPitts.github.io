@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+
+<html>
+    
+    <h1>
+        <a href="website.html"class="button"><span>Alex Pitts </span></a>
+    </h1>
+
+    <body>
+        <p1>
+            <button class="button"><span>Miss Baker</span></button>
+            <button class="button"><span>Assignment 2</span></button>
+            <button class="button"><span>Assignment 3</span></button>
+            <button class="button"><span>Assignment 4</span></button>
+            <button class="button"><span>Assignment 5</span></button>
+            <button class="button"><span>Assignment 6</span></button>
+
+        </p1>
+
+
+    </body>
+
+    <style>
+         body
+        {
+            background-image: url("blue.jpeg");
+            background-position: center;
+            background-size: cover; 
+            background-size: auto;
+
+        }
+
+
+      h1
+        {
+            text-align: center;
+            background-color:#000000;
+            font-size: xx-large;
+            padding: 20px;
+            color:rgb(0, 89, 255);
+        }
+
+        p1
+        {
+            text-align: center
+        }
+
+
+        .button 
+        {
+            border-radius: 4px;
+            background-color: #000000;
+            border: none;
+            color: rgb(0, 89, 255);
+            text-align: center;
+            font-size: 25px;
+            padding: 20px;
+            width: 250px;
+            transition: all 0.2s;
+            cursor: pointer;
+            margin: 8px;
+        }
+
+        .button span 
+        {
+            cursor: pointer;
+            display: inline-block;
+            position: relative;
+            transition: 0.2s;
+        }
+
+        .button span:after 
+        {
+            content: '\00bb';
+            position: absolute;
+            opacity: 0;
+            top: 0;
+            right: -20px;
+            transition: 0.2s;
+        }
+
+        .button:hover span 
+        {
+            padding-right: 25px;
+        }       
+
+        .button:hover span:after 
+        {
+            opacity: 1;
+            right: 0;
+        }
+    </style>
+</html>
