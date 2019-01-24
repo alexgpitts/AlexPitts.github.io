@@ -41,8 +41,23 @@ h1 {
     text-align: center;
 }
 
+h2 {
+    text-align: center;
+}
+
+
 #myHeader{
     text-align: center;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background-color: #bbb;
+    padding-top: 0.5px;
+    padding-bottom: 0.5px;
+}
+
+#second{
+    padding-top: 30px;
 }
 
 

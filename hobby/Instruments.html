@@ -1,0 +1,99 @@
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+        <script src="main.js"></script>
+        <style>
+            * {
+                box-sizing: border-box;
+            }
+
+
+            .column {
+                float: left;
+                padding: 10px;
+            }
+
+
+            .left {
+                width: 25%;
+                position: -webkit-sticky;
+                position: sticky;
+                top: 0;
+            }
+
+            .right {
+                width: 75%;
+                
+            }
+
+            .row:after {
+                content: "";
+                display: table;
+                clear: both;
+                
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <h1>Welcome to my music page!</h1>
+            <div class="row">
+                <div class="column left" style="background-color:#aaa;">
+                    <h2>Links</h2>
+                    <p><a href="videos.html">YouTube Videos</a></p>
+                    <p><a href="songs.html">Songs I Want To Learn</a></p>
+                    <p><a href="index.html">How I Started Playing</a></p>
+                </div>
+
+                <div class="column right" style="background-color:#bbb;">
+                        <div class="header" id="myHeader">
+                                <h2>My Instruments</h2>
+                        </div>
+
+                        <h3>Yamaha p45 digital piano</h3>
+
+                        <img>
+                            <img src="images/p45.JPG" alt="">
+                        </img>
+
+                        <h3 id = "second">Fender DG-22S CS</h3>
+
+                        <img>
+                            <img src="images/fender.jpg" alt="">
+                        </img>
+
+
+                        <h3 id = "second">Pacific Ukulele (made in Honolulu HI)</h3>
+
+                        <img>
+                            <img src="images/ukulele.jpg" alt="">
+                        </img>
+
+                        <h3 id = "second">Epiphone Les Paul Special 2</h3>
+
+                        <img>
+                            <img src="images/epiphone.jpg" alt="">
+                        </img>
+
+                        <h3 id = "second">1960s Lyle C-630</h3>
+
+                        <img>
+                            <img src="images/lyle.jpg" alt="">
+                        </img>
+
+                        <h3 id = "second">Golden Melody Harmonica</h3>
+
+                        <img>
+                            <img src="images/golden_melody2.jpg" alt="">
+                        </img>
+
+                </div>
+            </div>
+    </body>
+</html>
+        
