@@ -3,9 +3,10 @@ body{
     padding-right: 10%;
     padding-bottom: 50px;
     padding-left: 10%;
-    background-color: rgba(168, 189, 192, 0.616);
+    background-image: linear-gradient(#D10000, #FF8E0D);
     margin: 0 auto;
-    max-width: 1024px;
+    max-width: 1200px;
+    
     
 }
 
@@ -32,7 +33,17 @@ img {
 	height:100%;
 }
 
-p
-{
+p {
     font-size: x-large;
 }
+
+h1 {
+    text-align: center;
+}
+
+#myHeader{
+    text-align: center;
+}
+
+
+

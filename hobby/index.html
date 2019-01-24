@@ -1,61 +1,103 @@
-<!DOCTYPE html>
+
 
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Music</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-    <script src="main.js"></script>
-</head>
-<body>
-    <h1>Welcome to my music page!</h1>
-
-    <h2>How I started playing</h2>
-
-    <P>
-        When I was really little, my mom inherited a piano from my her aunt. 
-        My mom took piano lessons when she was little and decided she would 
-        teach me how to play.
-    </P>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+        <script src="main.js"></script>
+        <style>
+            * {
+                box-sizing: border-box;
+            }
 
 
-    <div class ="video-container">
-        <iframe width="80%" height="auto" 
-        src="https://www.youtube.com/embed/DD7wyRnpfdo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-        </iframe>
+            .column {
+                float: left;
+                padding: 10px;
+            }
+
+
+            .left {
+                width: 25%;
+                position: -webkit-sticky;
+                position: sticky;
+                top: 0;
+            }
+
+            .right {
+                width: 75%;
+                
+            }
+
+            .row:after {
+                content: "";
+                display: table;
+                clear: both;
+                
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <h1>Welcome to my music page!</h1>
+            <div class="row">
+                <div class="column left" style="background-color:#aaa;">
+                    <h2>Links</h2>
+                    <p><a href="url">YouTube Videos</a></p>
+                    <p><a href="url">Songs I Want To Learn</a></p>
+                    <p><a href="url">My Instruments</a></p>
+                </div>
+
+                <div class="column right" style="background-color:#bbb;">
+                        <div class="header" id="myHeader">
+                                <h2>How I Started Playing</h2>
+                        </div>
         
-    </div> 
-    [replace with video of my at 3 years old when I find video]
-
-
-
-    <P>
-        I learned some basic songs like Silent Night 
-        and Chopsticks. After a while I lost interest and My parents had 
-        gotten rid of the piano because we had to move. I didn’t play an 
-        instrument again until I was in the 4th grade and signed up for 
-        band class. I played the trombone until I was in the 7th grade and 
-        over those years I learned how to read sheet music.
-        
-    </P>
-
-    <img>
-        <img src="images/band.jpg" alt="">
-    
-    
-    </img>
-
-    <p>    
-        
-        I didn’t play again after that until I was 17, when my parent got their piano back 
-        the same piano I had played on as a kid. I Liked playing so much that 
-        I bought my own digital piano for my room. This is also around the same time 
-        my brother in law got my into playing guitar. I have been playing instruments non stop
-        ever since.
-    </P>
-    
-</body>
+                    <P>
+                        When I was two or three years old, my mom inherited a piano from her aunt. 
+                        My mom took piano lessons when she was little and decided she would 
+                        teach me how to play.
+                    </P>
+                
+                
+                    <div class ="video-container">
+                        <iframe width="80%" height="auto" 
+                        src="https://www.youtube.com/embed/DD7wyRnpfdo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                        </iframe>
+                        
+                    </div> 
+                    [replace with video of my at 3 years old when I find video]
+                
+                
+                
+                    <P>
+                        I learned some basic songs like Silent Night 
+                        and Chopsticks. After a while I lost interest and My parents had 
+                        gotten rid of the piano because we had to move. I didn’t play an 
+                        instrument again until I was in the 4th grade and signed up for 
+                        band class. I played the trombone until I was in the 7th grade and 
+                        over those years I learned how to read sheet music.
+                        
+                    </P>
+                
+                    <img>
+                        <img src="images/band.jpg" alt="">
+                    
+                    
+                    </img>
+                
+                    <p>    
+                        
+                        I didn’t play again after that until I was 17, when my parent got their piano back, 
+                        the same piano I had played on as a kid. I Liked playing so much that 
+                        I bought my own digital piano for my room. This is also around the same time 
+                        my brother in law got my into playing guitar. I have been playing instruments non stop
+                        ever since.
+                    </P>
+                </div>
+            </div>
+    </body>
 </html>
+        
