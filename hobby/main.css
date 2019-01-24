@@ -1,0 +1,12 @@
+body{
+    padding-top: 50px;
+    padding-right: 15%;
+    padding-bottom: 50px;
+    padding-left: 15%;
+    background-color: powderblue;
+}
+
+img {
+    width: 100%;
+    height: auto;
+  }
