@@ -1,0 +1,36 @@
+table, th, td{
+    border: 1px solid black;
+    border-collapse: collapse;
+    
+    
+}
+
+
+table{
+    
+    min-width: 100%;
+    min-height: 100%;
+    
+}
+
+#days{
+    max-height: 20;
+}
+
+
+
+#month{
+    text-align: center;
+}
+
+day{
+    min-height: 10px;
+    max-height: 20px;
+}
+
+
+
+#otherMonths{
+    background-color: rgba(112, 128, 144, 0.336);
+}
+
