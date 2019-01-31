@@ -114,3 +114,17 @@ table{
     background-size: cover;
     color: rgb(0, 0, 0);
 }
+
+.Croissant{
+    background-image: url("Croissant.jpg");
+    background-position: center;
+    background-size: cover;
+    color: rgb(0, 0, 0);
+}
+
+.Popcorn{
+    background-image: url("popcorn.jpg");
+    background-position: center;
+    background-size: cover;
+    color: rgb(0, 0, 0);
+}
