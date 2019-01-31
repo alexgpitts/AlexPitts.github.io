@@ -6,6 +6,10 @@ table, td{
 body{
     padding: 14px;
     /* min-height: 100%; */
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url("background.jpg");
 }
 
 table{
@@ -14,14 +18,13 @@ table{
     height: 700px; 
     /* margin: 20px fixed; */
     table-layout: fixed;
+    background-color: rgba(245, 245, 220, 0.397);
+
     
 }
 
-td{
-    
-    /* text-align: right; */
-    /* height: 200%; */
-    
+.row{
+    height: 70px;
 }
 
 
@@ -29,15 +32,17 @@ td{
 
 
 
-/* 
-#days{
+
+.days{
      text-align: left; 
-}  */
+     height: 10px;
+}  
 
 
 
 #month{
     text-align: center;
+    font-size: xx-large;
 }
 
 
@@ -46,5 +51,66 @@ td{
 
 .otherMonths{
     background-color: rgba(112, 128, 144, 0.336);
+    
 }
 
+.martin{
+    background-image: url("martin.jpg");
+    background-position: center;
+    background-size: cover;
+    color: rgb(255, 255, 255);
+}
+
+.newYears{
+
+    background-image: url("NY.jpg");
+    background-position: center;
+    background-size: cover;
+    color: rgb(255, 255, 255);
+
+}
+
+.Eve{
+
+    background-image: url("NYE.jpg");
+    background-position: center;
+    background-size: cover;
+    color: rgb(255, 255, 255);
+
+}
+
+.elvis{
+    background-image: url("elvis.jpg");
+    background-position: center;
+    background-size: cover;
+    color: rgb(39, 21, 21);
+}
+
+.Michelle{
+    background-image: url(" Michelle.jpg");
+    background-position: center;
+    background-size: cover;
+    color: rgb(255, 255, 255);
+   
+}
+
+.Peanut{
+    background-image: url("Peanut.jpg");
+    background-position: center;
+    background-size: cover;
+    color: rgb(0, 0, 0);
+}
+
+.spaghetti{
+    background-image: url("spaghetti.jpg");
+    background-position: center;
+    background-size: cover;
+    color: rgb(0, 0, 0);
+}
+
+.leggo{
+    background-image: url("leggo.jpg");
+    background-position: center;
+    background-size: cover;
+    color: rgb(0, 0, 0);
+}
