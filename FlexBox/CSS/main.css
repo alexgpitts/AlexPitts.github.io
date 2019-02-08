@@ -59,6 +59,16 @@ figcaption{
 
  .footer{
      text-align: center;
+     text-decoration: none;
+     font-size: large;
+ }
+ a{
+     text-decoration: none;
+     color: black;
+ }
+
+ a:hover{
+     color: blue;
  }
 
  @media screen and (max-width: 700px) {
@@ -66,5 +76,11 @@ figcaption{
       flex-direction: column;
       font-size: large;
     }
-  }
+}
+
+@media screen and (max-width: 700px) {
+    .footer{
+        font-size: medium;
+    }
+}
 
