@@ -1,120 +1,71 @@
+<!-- tested with chrome (desktop version 71.0.3578.98) 
+                 firefox (desktop version 64.0.2)
+                 samsung internet (mobile)
+                 -->
+
+
 <!DOCTYPE html>
-
 <html>
-    <head>
-        <title>Home Page</title>
-    </head>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="CSS/main.css" />
+    <script src="main.js"></script>
+</head>
+<body>
+
+    <div class="head">
+        <h1>Alex Pitts</h1>
+        <p>Welcome to my website!</p>
+    </div>
+
+    <div class="links">
+        <a href="Assignments.html">Assignments</a>
+        <a href="https://github.com/alexgpitts">GitHub</a>
+        <a href="https://www.youtube.com/channel/UCcKKS_xiZP7_-riaaGBYG9Q">YouTube</a>
+        <a href="https://www.instagram.com/alexgpitts/">Instagram</a>
+    </div>
+
+            <div class="about">
+                <h2>About Me</h2>
+            </div>
+    <div class="row">
+        <div class = "main">
+
+
+
+            <p>
+                My name is Alex Pitts and im a Computer science major at Linn Benton Community College.
+                In my free time I like to snowboard, play piano, play video games, ride motorcycles and fix computer.
+            </p>
+        </div>
+
+        <div class="pics">
+            <figure>
+                <img src="images/smallwr250r.jpg" srcset="images/wr250r.jpg 700w" alt="">
+                <figcaption>Image of me on my Yamaha WR250R</figcaption>
+            </figure>
+        </div>
+          
+        <div class = "main">
+            <p>
+                You can find my school Assignments in the "assignments" secton.
+                This website is in beta. Feel free to look around and check back soon to see future updates.
+            </p>           
+        </div>
+        
+
+ 
+    </div>
+
+    <div class="footer">
+        <footer>
+            -------------------------------------------------<br>
+                Contact me: <a href="mailto:alexgpitts@gmail.com">alexgpitts@gmail.com</a>
+        </footer>
+    </div>
     
-
-    <body>
-        
-        <h1>
-        <ahref="" class="header"><span>Alex Pitts</span></a>
-        </h1>
-        
-        <p id="buttons">
-            <a href="Assignments.html" class="button"><span>Assignments</span></a>
-            <a class="button"><span>Favorite Sites</span></a>
-            <a href="https://github.com/alexgpitts" class="button" target="_blank"><span>GitHub</span></a>
-
-        </p>
-
-        <p> 
-            Welcome to My website. My name is Alex Pitts and im a Computer science major at Linn Benton Community College.
-            In my free time I enjoy to snowboard, play piano, play video games, and fix computer.
-        </p>
-
-        <p>
-            You can find my school Assignments in the "assignments" secton.
-            This website is in beta. Feel free to look around and check back soon to see future updates.
-            
-        </p>
-        
-
-    </body>
-
-    <style>
-        body
-        {
-            background-image: url("blue.jpeg");
-            background-position: center;
-            background-size: auto;
-            height: 100vh;
-
-        }
-
-
-        h1
-        {
-            text-align: center;
-            background-color:#000000;
-            font-size: xx-large;
-            padding: 20px;
-            color:rgb(0, 89, 255);
-        }
-
-        #buttons
-        {
-            font-size: xx-large;
-            text-align: center;
-                        
-        }
-
-        p
-        {
-            font-size: xx-large;
-            color: rgb(0, 0, 0);
-        }
-
-
-
-        .button 
-        {
-            border-radius: 4px;
-            background-color: #000000;
-            border: none;
-            color: rgb(0, 89, 255);
-            text-align: center;
-            font-size: 25px;
-            padding: 20px;
-            width: 250px;
-            transition: all 0.2s;
-            cursor: pointer;
-            margin: 8px;
-        }
-
-        .button span 
-        {
-            cursor: pointer;
-            display: inline-block;
-            position: relative;
-            transition: 0.2s;
-        }
-
-        .button span:after 
-        {
-            content: '\00bb';
-            position: absolute;
-            opacity: 0;
-            top: 0;
-            right: -20px;
-            transition: 0.2s;
-        }
-
-        .button:hover span 
-        {
-            padding-right: 25px;
-        }       
-
-        .button:hover span:after 
-        {
-            opacity: 1;
-            right: 0;
-        }
-        .header{
-            color: rgb(0, 89, 255);;
-        }
-
-    
-    </style>
+</body>
 </html>
