@@ -3,6 +3,7 @@ body{
     background-color: rgba(17, 0, 255, 0.048);
     max-width: 1000px;
     margin: auto;
+    padding-bottom: 20px;
 }
 .head{
     padding: 50px;
