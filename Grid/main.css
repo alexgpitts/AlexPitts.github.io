@@ -1,0 +1,54 @@
+.parent {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    border-top: 1px solid black;
+    border-right: 1px solid black;
+}
+
+.parent > span {
+    padding: 8px 4px;
+    border-left: 1px solid black;
+    border-bottom: 2px solid black;
+}
+
+#head{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1; 
+    grid-row-end: 2;
+    text-align: center;
+    padding: 20px;
+    font-size: xx-large;
+    background-color: rgb(43, 117, 255);
+}
+
+body{
+    background-image: linear-gradient();
+    max-width: 900px;
+    margin: auto;
+    padding-top: 20px;
+}
+
+h1{
+    text-align: center;
+}
+
+#on{
+    background-color: rgba(43, 117, 255, 0.507);
+}
+
+#off{
+    background-color: rgba(128, 128, 128, 0.274);
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+a:hover{
+    text-decoration-line: underline;
+}
+
+
+
