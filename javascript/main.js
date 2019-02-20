@@ -7,7 +7,8 @@ let Assaults = [{
     "emptyreloadTime": "3.2",
     "bodyDPS": "336",    
     "headDPS": "720",  
-    "ammo": "light",  
+    "ammo": "light", 
+    "link": "R-301.html",
     "getName": function(){
         return this.Name + "\n";
     }
@@ -22,6 +23,7 @@ let Assaults = [{
     "bodyDPS": "144",    
     "headDPS": "288",  
     "ammo": "Heavy", 
+    "link": "",
     "getName": function(){
         return this.Name + "\n";
     } 
@@ -36,7 +38,8 @@ let Assaults = [{
     "emptyreloadTime": "3.1",
     "bodyDPS": "336",   
     "headDPS": "720",  
-    "ammo": "heavy",  
+    "ammo": "heavy", 
+    "link": "", 
     "getName": function(){
         return this.Name + "\n"
     }
@@ -55,7 +58,8 @@ let subs = [{
     "emptyreloadTime": "2.45",
     "bodyDPS": "216",    
     "headDPS": "324",  
-    "ammo": "light",  
+    "ammo": "light",
+    "link": "",  
     "getName": function(){
         return this.Name + "\n";
     }
@@ -70,6 +74,7 @@ let subs = [{
     "bodyDPS": "",   
     "headDPS": "",  
     "ammo": "",  
+    "link": "",
     "getName": function(){
        return this.Name + "\n";
     }
@@ -83,6 +88,7 @@ let subs = [{
     "emptyreloadTime": "",
     "bodyDPS": "",   
     "headDPS": "",  "ammo": "",
+    "link": "",
     "getName": function(){
         return this.Name + "\n";
     }  
@@ -101,6 +107,7 @@ let LMGs = [{
     "bodyDPS": "",    
     "headDPS": "",  
     "ammo": "",  
+    "link": "",
     "getName": function(){
         return this.Name + "\n";
     }
@@ -115,6 +122,7 @@ let LMGs = [{
     "bodyDPS": "",    
     "headDPS": "",  
     "ammo": "",
+    "link": "",
     "getName": function(){
         return this.Name + "\n";
     }  
@@ -133,6 +141,7 @@ let Pistols = [{
     "bodyDPS": "",    
     "headDPS": "",  
     "ammo": "",  
+    "link": "",
     "getName": function(){
         return this.Name + "\n";
     }
@@ -146,7 +155,8 @@ let Pistols = [{
     "emptyreloadTime": "",
     "bodyDPS": "",    
     "headDPS": "",  
-    "ammo": "",  
+    "ammo": "", 
+    "link": "", 
     "getName": function(){
         return this.Name + "\n";
     }
@@ -161,6 +171,7 @@ let Pistols = [{
     "bodyDPS": "",    
     "headDPS": "",  
     "ammo": "", 
+    "link": "",
     "getName": function(){
         return this.Name + "\n";
     } 
@@ -175,6 +186,7 @@ let Pistols = [{
     "bodyDPS": "",    
     "headDPS": "",  
     "ammo": "",  
+    "link": "",
     "getName": function(){
         return this.Name + "\n";
     }
@@ -191,7 +203,8 @@ let shotguns = [{
     "emptyreloadTime": "",
     "bodyDPS": "",    
     "headDPS": "",  
-    "ammo": "",  
+    "ammo": "", 
+    "link": "", 
     "getName": function(){
         return this.Name + "\n";
     }
@@ -206,6 +219,7 @@ let shotguns = [{
     "bodyDPS": "",    
     "headDPS": "",  
     "ammo": "", 
+    "link": "",
     "getName": function(){
         return this.Name + "\n";
     } 
@@ -220,6 +234,7 @@ let shotguns = [{
     "bodyDPS": "",    
     "headDPS": "",  
     "ammo": "", 
+    "link": "",
     "getName": function(){
         return this.Name + "\n";
     } 
@@ -236,7 +251,8 @@ let snipers = [{
     "emptyreloadTime": "",
     "bodyDPS": "",    
     "headDPS": "",  
-    "ammo": "",  
+    "ammo": "", 
+    "link": "", 
     "getName": function(){
         return this.Name + "\n";
     }
@@ -251,6 +267,7 @@ let snipers = [{
     "bodyDPS": "",    
     "headDPS": "",  
     "ammo": "",  
+    "link": "",
     "getName": function(){
         return this.Name + "\n";
     }
@@ -264,7 +281,8 @@ let snipers = [{
     "emptyreloadTime": "",
     "bodyDPS": "",    
     "headDPS": "",  
-    "ammo": "",  
+    "ammo": "", 
+    "link": "", 
     "getName": function(){
         return this.Name + "\n";
     }
@@ -278,7 +296,8 @@ let snipers = [{
     "emptyreloadTime": "",
     "bodyDPS": "",    
     "headDPS": "",  
-    "ammo": "", 
+    "ammo": "",
+    "link": "", 
     "getName": function(){
         return this.Name + "\n";
     } 
@@ -288,60 +307,80 @@ let snipers = [{
 
 function Assault(){
     for (let index = 0; index < Assaults.length; index++) {
-        let newPara = document.createElement("p");
-        newPara.innerHTML = Assaults[index]["getName"]();
+        var a = document.createElement('a');
+        var linkText = document.createTextNode(Assaults[index]["getName"]());
+        a.appendChild(linkText);
+        a.title = Assaults[index]["getName"]();
+        a.href = Assaults[index].link;
         const pageBody = document.getElementsByClassName("assault");
-        pageBody[0].appendChild(newPara);
+        pageBody[0].appendChild(a);
     }
+
 }
 
 function sub(){
     for (let index = 0; index < subs.length; index++) {
-        let newPara = document.createElement("p");
-        newPara.innerHTML = subs[index]["getName"]();
+        var a = document.createElement('a');
+        var linkText = document.createTextNode(subs[index]["getName"]());
+        a.appendChild(linkText);
+        a.title = subs[index]["getName"]();
+        a.href = subs[index].link;
         const pageBody = document.getElementsByClassName("sub");
-        pageBody[0].appendChild(newPara);
+        pageBody[0].appendChild(a);
     }
 }
 
 function LMG(){
     for (let index = 0; index < LMGs.length; index++) {
-        let newPara = document.createElement("p");
-        newPara.innerHTML = LMGs[index]["getName"]();
+        var a = document.createElement('a');
+        var linkText = document.createTextNode(LMGs[index]["getName"]());
+        a.appendChild(linkText);
+        a.title = LMGs[index]["getName"]();
+        a.href = LMGs[index].link;
         const pageBody = document.getElementsByClassName("lmg");
-        pageBody[0].appendChild(newPara);
+        pageBody[0].appendChild(a);
     } 
 }
 
 function pistol(){
     
     for (let index = 0; index < Pistols.length; index++) {
-        let newPara = document.createElement("p");
-        newPara.innerHTML = Pistols[index]["getName"]();
+        var a = document.createElement('a');
+        var linkText = document.createTextNode(Pistols[index]["getName"]());
+        a.appendChild(linkText);
+        a.title = Pistols[index]["getName"]();
+        a.href = Pistols[index].link;
         const pageBody = document.getElementsByClassName("pistol");
-        pageBody[0].appendChild(newPara);
+        pageBody[0].appendChild(a);
     }
 
 }
 
 function shotgun(){
     for (let index = 0; index < shotguns.length; index++) {
-        let newPara = document.createElement("p");
-        newPara.innerHTML = shotguns[index]["getName"]();
+        var a = document.createElement('a');
+        var linkText = document.createTextNode(shotguns[index]["getName"]());
+        a.appendChild(linkText);
+        a.title = shotguns[index]["getName"]();
+        a.href = shotguns[index].link;
         const pageBody = document.getElementsByClassName("shotgun");
-        pageBody[0].appendChild(newPara);
+        pageBody[0].appendChild(a);
     }
 }
 
 
 function sniper(){
     for (let index = 0; index < snipers.length; index++) {
-        let newPara = document.createElement("p");
-        newPara.innerHTML = snipers[index]["getName"]();
+        var a = document.createElement('a');
+        var linkText = document.createTextNode(snipers[index]["getName"]());
+        a.appendChild(linkText);
+        a.title = snipers[index]["getName"]();
+        a.href = snipers[index].link;
         const pageBody = document.getElementsByClassName("sniper");
-        pageBody[0].appendChild(newPara);
+        pageBody[0].appendChild(a);
     }
 }
+
 
 
 
