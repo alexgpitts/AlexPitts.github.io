@@ -1,113 +1,45 @@
 <!DOCTYPE html>
-
 <html>
-    <head>
-        <title>Assignments Page</title>
-        
-    </head>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Grid Project</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/second.css">
+    <script src="main.js"></script>
+</head>
+<body>
+
+
+    <div class="parent">
+        <span id="head">Assignments Page</span>
+
+        <span id="off">Assignment 1</span>
+            <span id="off"> <a href="miss_baker/index.html">Miss Baker</a> </span>
+
+        <span id="on">Assignment 2</span>
+            <span id="on"><a href="hobby/index.html">Assignment 2 (Music Page)</a> </span> 
+
+        <span id="off">Assignment 4</span>
+            <span id="off">
+            <a href="calendar/index.html">Calender</a>
+            <br> <a href="miss_baker_updated/index.html">Miss Baker Part 2</a>
+            </span>
+
+        <span id="on">Assignment 5</span>
+            <span id="on"><a href="FlexBox/index.html">FlexBox</a> </span>
+
+        <span id="off">Assignment 6</span>
+            <span id="off"> 
+                <a href="calendar_grid/index.html">Calendar_Grid</a> <br>
+                <a href="Grid/index.html">Grid Project</a></span>
+
+        <span id="on">Assignment 7</span> 
+            <span id="on">
+                <a href="javascript/index.html">javascript assignment</a>
+            </span>
+
+    </div>
     
-
-
-    <body>    
-        <h1>
-        <a href="index.html" class="header"><span>Alex Pitts</span></a>
-        </h1>
-        
-        <p>
-            <a href = "miss_baker\index.html" class="button"><span>Miss Baker</span></a>
-            <a href = "hobby/index.html" class="button"><span>Assignment 2 (Music Page)</span></a>
-            <a href = "calendar/index.html" class="button"><span>Calender</span></a>
-            <a href = "miss_baker_updated/index.html" class="button"><span>Miss Baker Part 2</span></a>
-            <a href = "FlexBox/index.html" class="button"><span>FlexBox</span></a>
-            <a href = "calendar_grid/index.html" class="button"><span>Calendar_Grid</span></a>
-            <a href = "Grid/index.html" class = "button"><span>Grid Project</span></a>
-            <a href = "javascript/index.html" class = "button"><span>javascript Project</span></a>
-            
-
-        </p>
-
-
-    </body>
-
-    <style>
-         body
-        {
-            background-image: url("blue.jpeg");
-            background-position: center;
-            background-size: cover; 
-            background-size: auto;
-            height: 100vh;
-
-        }
-
-
-      h1
-        {
-            text-align: center;
-            background-color:#000000;
-            font-size: xx-large;
-            padding: 20px;
-            color:rgb(0, 89, 255);
-        }
-
-        p
-        {
-            text-align: center;
-        
-        }
-
-
-        .button 
-        {
-            border-radius: 4px;
-            background-color: #000000;
-            border: none;
-            color: rgb(0, 89, 255);
-            text-align: center;
-            font-size: 25px;
-            padding: 20px;
-            width: 250px;
-            transition: all 0.2s;
-            cursor: pointer;
-            margin: 10px;
-            
-        }
-
-        .button span 
-        {
-            cursor: pointer;
-            display: inline-block;
-            position: relative;
-            transition: 0.2s;
-            margin: 25px;
-        }
-
-        .button span:after 
-        {
-            content: '\00bb';
-            position: absolute;
-            opacity: 0;
-            top: 0;
-            right: -20px;
-            transition: 0.2s;
-            
-        }
-
-        .button:hover span 
-        {
-            padding-right: 25px;
-           
-        }       
-
-        .button:hover span:after 
-        {
-            opacity: 1;
-            right: 0;
-            
-        }
-
-        .header{
-            color: rgb(0, 89, 255);;
-        }
-    </style>
+</body>
 </html>
