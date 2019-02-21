@@ -388,5 +388,3 @@ function sniper(){
 
 
 
-
-
