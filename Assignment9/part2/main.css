@@ -1,0 +1,17 @@
+html{
+    background-image: linear-gradient(rgb(0, 89, 255), rgb(112, 110, 110));
+    height: 100%;
+}
+
+body{
+    margin: auto;
+    width: 90%;
+    font-size: x-large;
+}
+h1{
+    text-align: center;
+}
+
+#parent{
+    display: flex; 
+}
