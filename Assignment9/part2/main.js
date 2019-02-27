@@ -4,25 +4,11 @@ player2 = new YT.Player('player2', {
     height: '390',
     width: '640',
     videoId: 'w-IEfjDTi9c',
-    events: {
-        'onReady': onPlayerReady,
-        'onStateChange': onPlayerStateChange
-    }
     });
 }
 
 
-function onPlayerReady(event) {
-event.target.playVideo();
-}
 
 
-var done = false;
-function onPlayerStateChange(event) {
-    if (event.data == YT.PlayerState.PLAYING && !done) {
-        setTimeout(stopVideo, 6000);
-        done = true;
-    }
-}
 
 
