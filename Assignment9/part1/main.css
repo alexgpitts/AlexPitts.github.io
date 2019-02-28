@@ -5,4 +5,16 @@ h1{
 
 button{
     font-size: large;
+    margin: 10px;
+}
+
+#people{
+    display: flex;
+    
+}
+
+body{
+    width: 90%;
+    margin: auto;
+    max-width: 900px;
 }
