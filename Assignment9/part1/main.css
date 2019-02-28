@@ -18,3 +18,18 @@ body{
     margin: auto;
     max-width: 900px;
 }
+
+html{
+    background-image: linear-gradient(rgba(49, 49, 250, 0.589), rgb(177, 174, 174));
+    height: 100%;
+}
+
+button{
+    padding: 10px;
+    background: none;
+}
+
+button:hover{
+    background: blue;
+    color: white;
+}

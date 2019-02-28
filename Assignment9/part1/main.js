@@ -1,19 +1,33 @@
-
-var People = function (name, age, occupation){
-    this.name = name;
-    this.age = age;
-    this.occupation = occupation;
-   
+class People{
+    constructor(name, age, occupation){
+        this.name = name;
+        this.age = age;
+        this.occupation = occupation; 
+    } 
+    info() {
+        let info = ("Name: " + this.name + ", Age: " + this.age + ", Occupation: " + this.occupation);
+        return info;
+    }
 }
 
-People.prototype.info = function() {
-    let info = ("Name: " + this.name + ", Age: " + this.age + ", Occupation: " + this.occupation);
+
+class Family extends People{
+    constructor(name, age, occupation, relation){
+        super(name, age, occupation);
+        this.relation = relation;          
+    }
+    info() {
+        let info = super.info() + ", Relation: "+ this.relation;
     return info;
+    }
+
 }
+
 
 var alex = new People('Alex', 20, 'landscaping');
-var leanna = new People('leanna', 47, 'facility services manager');
-var cody = new People('Cody', 25, 'USAF Hospital administrator');
+var leanna = new Family('leanna', 47, 'facility services manager', 'Mother');
+var cody = new Family('Cody', 25, 'USAF Hospital administrator', 'brother-in-law');
+var brentan = new People('Brentan', 20, 'safeway clerk');
 
 
 
@@ -39,6 +53,15 @@ function printLeanna(){
 function printCody(){
     var p = document.createElement('p');
     var Text = document.createTextNode(cody.info());
+    p.appendChild(Text);
+    const pageBody = document.getElementsByClassName("people");
+    pageBody[0].appendChild(p);
+
+}
+
+function printBrentan(){
+    var p = document.createElement('p');
+    var Text = document.createTextNode(brentan.info());
     p.appendChild(Text);
     const pageBody = document.getElementsByClassName("people");
     pageBody[0].appendChild(p);
