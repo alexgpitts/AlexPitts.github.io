@@ -90,6 +90,9 @@ figcaption{
     .about{
         font-size: large;
     }
+    .head{
+        padding: 25px;
+     }
 }
 
 
