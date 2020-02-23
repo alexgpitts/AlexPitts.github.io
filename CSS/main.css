@@ -69,7 +69,7 @@ figcaption{
  }
  a{
      text-decoration: none;
-     color: black;
+     color: rgb(255, 255, 255);
  }
 
  a:hover{
