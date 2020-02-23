@@ -8,14 +8,14 @@ body{
 .head{
     padding: 50px;
     text-align: center;
-    background-image: "CSS/milkyway.jpeg";
+    background-image: "/milkyway.jpeg";
     color: white; 
     font-size: large;
 }
 
 .links{
     display: flex;
-    background-image: "CSS/milkyway.jpeg";
+    background-image: "/milkyway.jpeg";
 }
 
 .links a{
