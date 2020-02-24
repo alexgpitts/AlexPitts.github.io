@@ -2,6 +2,7 @@
 body{
     color: rgba(255, 255, 255);
     background-image: url("milkyway.jpeg");
+    background-size: cover;
     max-width: 1000px;
     margin: auto;
     padding-bottom: 20px;
