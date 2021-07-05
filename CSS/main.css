@@ -11,7 +11,7 @@ body{
     
     
 }
-.row, .about, .footer, h2{
+.row, .about, .footer{
     background-color: rgba(10, 10, 10, 0.5); /* Transparent Yellow */
 }
 .head{
