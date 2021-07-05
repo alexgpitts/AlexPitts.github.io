@@ -14,14 +14,14 @@ body{
 .head{
     padding: 50px;
     text-align: center;
-    background-image: linear-gradient(rgb(43, 117, 255), rgb(63, 54, 184));
+    background-image: linear-gradient(to right, #000000, #434343);
     color: white; 
     font-size: large;
 }
 
 .links{
     display: flex;
-    background-image: linear-gradient(rgb(43, 117, 255), rgb(63, 54, 184));
+    background-image: linear-gradient(to right, #000000, #434343);
 }
 
 .links a{
