@@ -50,6 +50,7 @@ body{
 
 .main{
     flex: 60%;
+    background-color: rgba(10, 10, 10, 0.5); /* Transparent Yellow */
 }
 
 .pics{
