@@ -37,6 +37,7 @@ body{
 
 .links a:hover{
     background-color: grey;
+    color: white;
 }
 
 .about{
